@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/fhinkel/nodejs-hello-world#readme",
   "dependencies": {
-    "bar": "file:./.svn"
+    "isarray": "2.0.5"
   }
 }
