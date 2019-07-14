@@ -1,5 +1,5 @@
 var http = require('http');
-var var isArray = require('isarray');
+var S = require('string');
 
 var server = http.createServer(function(request, response) {
 
@@ -10,5 +10,8 @@ var server = http.createServer(function(request, response) {
 
 var port = 80;
 server.listen(port);
-console.log(isArray([]));
 console.log("Server running at http://localhost:%d", port);
+
+
+var doesIt = S('my cool string').left(2).endsWith('y'); //true
+

@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/fhinkel/nodejs-hello-world#readme",
   "dependencies": {
-    "isarray": "2.0.5"
+    "string": "3.3.3"
   }
 }
