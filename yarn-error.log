@@ -1,0 +1,53 @@
+Arguments: 
+  /usr/local/Cellar/node/11.9.0/bin/node /usr/local/bin/yarn install --ignore-scripts
+
+PATH: 
+  /usr/local/opt/icu4c/sbin:/usr/local/opt/icu4c/bin:/Users/tomcallahan/.pyenv/shims:/usr/local/opt/icu4c/sbin:/usr/local/opt/icu4c/bin:/Users/tomcallahan/.pyenv/shims:/usr/local/opt/icu4c/sbin:/usr/local/opt/icu4c/bin:/Users/tomcallahan/Downloads/google-cloud-sdk/bin:/Users/tomcallahan/.pyenv/shims:/usr/local/opt/icu4c/sbin:/usr/local/opt/icu4c/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/tomcallahan/go/bin:/Users/tomcallahan/go/bin:/Users/tomcallahan/go/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  11.9.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/tomcallahan/workspaces/elastic/nodejs-hello-world/.svn/package.json: Unexpected token } in JSON at position 104
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "nodejs-hello-world",
+    "version": "1.0.0",
+    "description": "Hello World sample app",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/fhinkel/nodejs-hello-world.git"
+    },
+    "author": "fhinkel",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/fhinkel/nodejs-hello-world/issues"
+    },
+    "homepage": "https://github.com/fhinkel/nodejs-hello-world#readme",
+    "dependencies": {
+      "bar": "file:./.svn"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
